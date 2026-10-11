@@ -1,7 +1,7 @@
 # Online Retail Sales Analysis
 
 ## Project Overview
-This project analyzes online retail transactions using SQL Server and Power BI to identify sales trends, top-performing countries, and products with high sales value.
+This project analyzes online retail transactions using SQL Server and Power BI to understand sales performance, identify top-performing countries and products, and uncover monthly sales trends.
 
 ## Tools Used
 - SQL Server
@@ -10,16 +10,16 @@ This project analyzes online retail transactions using SQL Server and Power BI t
 - DAX
 
 ## Dataset
-The dataset contains 541,909 transaction records with information about invoices, products, quantities, prices, dates, customers, and countries.
+The dataset contains 541,909 transaction records, including invoice numbers, product descriptions, quantities, unit prices, invoice dates, customer IDs, and countries.
 
 ## Data Cleaning
 - Excluded cancelled invoices identified by invoice numbers starting with `C`.
-- Removed rows with missing product descriptions in Power BI.
+- Removed records with missing product descriptions in Power BI.
 - Standardized text fields using Trim.
-- Set appropriate data types for dates, quantities, prices, and identifiers.
-- Retained negative quantities to account for returns.
+- Applied appropriate data types to dates, quantities, prices, and identifiers.
+- Retained negative quantities to account for product returns.
 
-## Key Performance Indicators
+## Key Performance Indicators (KPIs)
 - Total Sales
 - Total Invoices
 - Total Customers
@@ -27,28 +27,32 @@ The dataset contains 541,909 transaction records with information about invoices
 
 ## Analysis
 - Sales performance by country.
-- Products and items with the highest sales value.
-- Monthly sales trends over the available period.
+- Top products and items by sales value.
+- Monthly sales trends.
 - Customer purchasing activity.
 
 ## Key Findings
 - The United Kingdom generated the highest sales value, approximately 9 million.
-- Postage-related items appeared among the highest sales-value items and should be distinguished from physical products.
-- The dataset covers December 2010 through December 2011, so it does not support a reliable long-term annual growth conclusion.
+- Postage-related items appeared among the highest sales-value items and should be analyzed separately from physical products.
+- The dataset covers December 2010 through December 2011, limiting long-term growth analysis.
 
 ## Recommendations
 - Strengthen customer retention in the United Kingdom.
 - Explore opportunities in other markets to diversify sales.
 - Separate postage and service charges from physical products when evaluating product performance.
 - Monitor monthly sales trends and investigate significant changes.
-- Review customer records with missing IDs to improve customer analysis.
+- Review records with missing customer IDs to improve customer-level analysis.
 
 ## Important Note
-Total Sales is not Profit. The dataset does not contain product cost, so profit cannot be calculated accurately.
+Total Sales is not Profit. Since product cost data is unavailable, profit cannot be calculated accurately.
+
+## Dashboard Preview
+![Online Retail Sales Dashboard](dashboard.png)
 
 ## Project Files
-- Power BI dashboard: `Online Retail Sales Analysis.pbix`
-- Dashboard screenshot: `dashboard.png`
+- `Online Retail Sales Analysis.pbix` — Power BI dashboard.
+- `dashboard.png` — Dashboard screenshot.
+- `Online_Retail_Analysis.sql` — SQL analysis queries.
 
 ## Author
 Aspiring Junior Data Analyst | SQL Server | Power BI | Excel | Python
